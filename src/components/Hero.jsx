@@ -109,10 +109,10 @@ export default function Hero() {
             Fakiha
           </motion.div>
 
-          {/* "Zahoor" — flies in from the RIGHT with gradient */}
+          {/* "Zahoor" — flies in from the RIGHT with animated gradient */}
           <motion.div
             variants={slideFromRight}
-            className="block bg-gradient-to-r from-cyan-500 via-purple-500 to-pink-500 bg-clip-text text-transparent"
+            className="block gradient-text-animated"
           >
             Zahoor
           </motion.div>
@@ -124,7 +124,7 @@ export default function Hero() {
           className="text-base sm:text-lg md:text-xl font-medium text-neutral-600 dark:text-gray-400 max-w-2xl mb-10 leading-relaxed"
         >
           Hi, I'm <span className="text-neutral-900 dark:text-white font-extrabold">{fullName}</span> — a{' '}
-          <span className="text-cyan-500 dark:text-cyan-400 font-extrabold">{shortTitle}</span>.
+          <span className="gradient-text-animated font-extrabold">{shortTitle}</span>.
           Building scalable web apps, RESTful APIs &amp; AI-powered solutions.
         </motion.p>
 
@@ -137,7 +137,7 @@ export default function Hero() {
             href="#projects"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            className="flex items-center justify-center gap-2 px-8 py-4 rounded-2xl bg-cyan-500 hover:bg-cyan-400 text-black font-black uppercase text-xs tracking-widest shadow-lg shadow-cyan-500/20 hover:shadow-cyan-500/35 transition-all duration-200 cursor-pointer"
+            className="btn-glow flex items-center justify-center gap-2 px-8 py-4 rounded-2xl bg-cyan-500 hover:bg-cyan-400 text-black font-black uppercase text-xs tracking-widest shadow-lg shadow-cyan-500/20 hover:shadow-cyan-500/35 transition-all duration-200 cursor-pointer"
           >
             View Projects
             <ArrowRight size={14} />

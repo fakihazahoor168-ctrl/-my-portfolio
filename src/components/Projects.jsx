@@ -134,7 +134,7 @@ export default function Projects() {
                     {project.tech.map((t) => (
                       <span
                         key={t}
-                        className="px-3 py-1.5 rounded-xl text-[10px] md:text-xs font-semibold bg-neutral-50 dark:bg-white/5 border border-neutral-200/50 dark:border-white/5 text-neutral-500 dark:text-gray-400"
+                        className="tech-badge px-3 py-1.5 rounded-xl text-[10px] md:text-xs font-semibold bg-neutral-50 dark:bg-white/5 border border-neutral-200/50 dark:border-white/5 text-neutral-500 dark:text-gray-400"
                       >
                         {t}
                       </span>

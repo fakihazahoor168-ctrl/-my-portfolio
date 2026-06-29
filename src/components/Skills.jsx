@@ -104,11 +104,15 @@ export default function Skills() {
 
                 {/* Badges Container */}
                 <div className="flex flex-wrap gap-2.5 mt-auto">
-                  {category.items.map((item) => (
+                  {category.items.map((item, idx) => (
                     <motion.span
                       key={item}
-                      whileHover={{ scale: 1.05, y: -2 }}
-                      className="px-4 py-2 rounded-xl text-xs md:text-sm font-semibold text-neutral-500 dark:text-gray-400 border border-neutral-200/60 dark:border-white/5 hover:border-cyan-500/40 dark:hover:border-cyan-500/30 hover:text-cyan-500 dark:hover:text-cyan-400 bg-neutral-50/50 dark:bg-neutral-900/10 transition-colors duration-200 select-none cursor-default"
+                      initial={{ opacity: 0, scale: 0.8 }}
+                      whileInView={{ opacity: 1, scale: 1 }}
+                      viewport={{ once: true }}
+                      transition={{ delay: idx * 0.05, duration: 0.4 }}
+                      whileHover={{ scale: 1.08, y: -3 }}
+                      className="tech-badge px-4 py-2 rounded-xl text-xs md:text-sm font-semibold text-neutral-500 dark:text-gray-400 border border-neutral-200/60 dark:border-white/5 hover:border-cyan-500/40 dark:hover:border-cyan-500/30 hover:text-cyan-500 dark:hover:text-cyan-400 bg-neutral-50/50 dark:bg-neutral-900/10 transition-colors duration-200 select-none cursor-default"
                     >
                       {item}
                     </motion.span>
