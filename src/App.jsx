@@ -1,5 +1,6 @@
 import { useState, useEffect, useRef } from 'react';
 import { motion, useScroll, useSpring } from 'framer-motion';
+import CustomCursor from './components/CustomCursor';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import About from './components/About';
@@ -67,8 +68,8 @@ export default function App() {
         style={{ scaleX, width: '100%' }}
       />
 
-      {/* ── Cursor Glow ── */}
-      <div ref={cursorRef} className="cursor-glow hidden md:block" />
+      {/* ── Custom Round Cursor ── */}
+      <CustomCursor />
 
       {/* ── Floating Gradient Orbs ── */}
       <div className="orb orb-1" />
